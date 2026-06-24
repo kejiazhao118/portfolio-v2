@@ -1,8 +1,6 @@
-import type { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Etc. — AVISS KEJIA ZHAO",
-};
+import { useEffect } from "react";
 
 const leftItems = [
   { img: "/images/etc/3d-chess.webp", alt: "3D Chess Modelling", title: "3D Chess Modelling", tags: "3D Modelling, 3D Design" },
@@ -21,6 +19,24 @@ const rightItems = [
 ];
 
 export default function Etc() {
+  useEffect(() => {
+    const leftCards = document.querySelectorAll(".col-left .project");
+    const rightCards = document.querySelectorAll(".col-right .project");
+
+    const allCards = [
+      ...Array.from(leftCards).map((el, i) => ({ el, i, side: "left" })),
+      ...Array.from(rightCards).map((el, i) => ({ el, i, side: "right" })),
+    ].sort((a, b) => a.i - b.i);
+
+    allCards.forEach(({ el, i, side }) => {
+      const card = el as HTMLElement;
+      card.style.opacity = "0";
+      setTimeout(() => {
+        card.classList.add(side === "left" ? "jiggle-a" : "jiggle-b");
+      }, i * 120);
+    });
+  }, []);
+
   return (
     <main className="main-content etc-main">
       <div className="projects">

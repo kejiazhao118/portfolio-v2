@@ -1,10 +1,18 @@
-import type { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "About — AVISS KEJIA ZHAO",
-};
+import { useEffect } from "react";
 
 export default function About() {
+  useEffect(() => {
+    const photo = document.querySelector(".about-photo") as HTMLElement;
+    if (photo) {
+      photo.style.opacity = "0";
+      setTimeout(() => {
+        photo.classList.add("jiggle-a");
+      }, 100);
+    }
+  }, []);
+
   return (
     <main className="main-content about-main">
 
