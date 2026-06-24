@@ -444,3 +444,10 @@ nav a.nav-small { font-size: 0.95rem; }
   margin-bottom: 1.25rem;
   margin-top: 0.5rem;
 }
+
+.section-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  line-height: 1.3;
+}
