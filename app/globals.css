@@ -368,3 +368,32 @@ nav a.nav-small { font-size: 0.95rem; }
 .img-full { width: 100%; display: block; margin: 1.5rem 0; }
 .caption { font-size: 0.8rem; color: #888; font-weight: 400; margin-top: -0.5rem; margin-bottom: 1.25rem; }
 .divider { border: none; border-top: 1px solid #e8e8e8; margin: 3rem 0; }
+
+
+/* ── CASE STUDY DETAILS ── */
+.subsection-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.section-list {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.section-list li {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.flow-divider {
+  border: none;
+  border-top: 1px solid #e8e8e8;
+  margin: 3rem 0;
+}
