@@ -419,3 +419,18 @@ nav a.nav-small { font-size: 0.95rem; }
   color: #333;
   margin-bottom: 0.5rem;
 }
+
+
+/* ── IMG GRID 3 ── */
+.img-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.img-grid-3 img { width: 100%; display: block; }
+
+@media (max-width: 900px) {
+  .img-grid-3 { grid-template-columns: 1fr; }
+}
