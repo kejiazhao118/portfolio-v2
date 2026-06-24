@@ -434,3 +434,13 @@ nav a.nav-small { font-size: 0.95rem; }
 @media (max-width: 900px) {
   .img-grid-3 { grid-template-columns: 1fr; }
 }
+
+
+/* ── VCX SUBSECTION TITLE (different from RockWallet) ── */
+.vcx-subsection-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 1.25rem;
+  margin-top: 0.5rem;
+}
