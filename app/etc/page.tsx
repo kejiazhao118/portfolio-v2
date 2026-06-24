@@ -20,21 +20,39 @@ const rightItems = [
 
 export default function Etc() {
   useEffect(() => {
-    const leftCards = document.querySelectorAll(".col-left .project");
-    const rightCards = document.querySelectorAll(".col-right .project");
+    const leftCards = Array.from(document.querySelectorAll(".col-left .project"));
+    const rightCards = Array.from(document.querySelectorAll(".col-right .project"));
 
     const allCards = [
-      ...Array.from(leftCards).map((el, i) => ({ el, i, side: "left" })),
-      ...Array.from(rightCards).map((el, i) => ({ el, i, side: "right" })),
+      ...leftCards.map((el, i) => ({ el, i, side: "left" })),
+      ...rightCards.map((el, i) => ({ el, i, side: "right" })),
     ].sort((a, b) => a.i - b.i);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const card = entry.target as HTMLElement;
+            const side = card.dataset.side;
+            const index = parseInt(card.dataset.index || "0");
+            setTimeout(() => {
+              card.classList.add(side === "left" ? "jiggle-a" : "jiggle-b");
+            }, index * 80);
+            observer.unobserve(card);
+          }
+        });
+      },
+      { threshold: 0, rootMargin: "0px 0px 200px 0px" }
+    );
 
     allCards.forEach(({ el, i, side }) => {
       const card = el as HTMLElement;
-      card.style.opacity = "0";
-      setTimeout(() => {
-        card.classList.add(side === "left" ? "jiggle-a" : "jiggle-b");
-      }, i * 120);
+      card.dataset.side = side;
+      card.dataset.index = String(i);
+      observer.observe(card);
     });
+
+    return () => observer.disconnect();
   }, []);
 
   return (

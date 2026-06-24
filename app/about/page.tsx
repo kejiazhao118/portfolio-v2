@@ -6,10 +6,19 @@ export default function About() {
   useEffect(() => {
     const photo = document.querySelector(".about-photo") as HTMLElement;
     if (photo) {
-      photo.style.opacity = "0";
-      setTimeout(() => {
-        photo.classList.add("jiggle-a");
-      }, 100);
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              photo.classList.add("jiggle-a");
+              observer.unobserve(photo);
+            }
+          });
+        },
+        { threshold: 0, rootMargin: "0px 0px 200px 0px" }
+      );
+      observer.observe(photo);
+      return () => observer.disconnect();
     }
   }, []);
 
