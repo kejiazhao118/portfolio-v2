@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Konstant Grotesk";
   src: url("/KonstantGrotesk.otf") format("opentype");
-  font-weight: bold;
+  font-weight: 800;
   font-style: normal;
 }
 
