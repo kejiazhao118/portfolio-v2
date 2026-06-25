@@ -38,7 +38,9 @@ export default function About() {
     <main className="main-content about-main">
 
       <div className="about-header">
-        <img src="/images/about/Profile.webp" alt="Aviss Kejia Zhao" className="about-photo" />
+        <div className="about-photo-wrap">
+  <img src="/images/about/Profile.webp" alt="Aviss Kejia Zhao" className="about-photo" />
+</div>
         <div className="about-bio">
           <h1>
             <span className="tagline-line tagline-from-left">Curious about people.</span><br />
