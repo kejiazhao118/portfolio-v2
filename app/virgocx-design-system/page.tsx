@@ -8,7 +8,7 @@ export default function VirgoCXDesignSystem() {
   return (
     <main className="main-content case-main">
 
-      <a href="/" className="back-link">← Back to Work</a>
+      <a href="/" className="back-link"><span>←</span> Back to Work</a>
 
       <h1 className="case-title">VirgoCX — Building a Design System from the Ground Up</h1>
       <p className="case-subtitle">Building a scalable design foundation for a growing Canadian crypto platform across web, mobile, and marketing channels.</p>
@@ -245,7 +245,7 @@ export default function VirgoCXDesignSystem() {
       </div>
 
       <div style={{ padding: 0 }}>
-        <a href="/" className="back-link">← Back to Work</a>
+        <a href="/" className="back-link"><span>←</span> Back to Work</a>
       </div>
 
     </main>

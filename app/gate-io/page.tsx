@@ -8,8 +8,7 @@ export default function GateIO() {
   return (
     <main className="main-content case-main">
 
-      <a href="/" className="back-link">← Back to Work</a>
-
+      <a href="/" className="back-link"><span>←</span> Back to Work</a>
       <h1 className="case-title">Gate.io — Homepage Redesign</h1>
       <p className="case-subtitle">Redesigning the Gate.io homepage by identifying existing issues and proposing solutions — from UI analysis to high-fidelity redesign.</p>
 
@@ -125,7 +124,7 @@ export default function GateIO() {
       </div>
 
       <div style={{ padding: 0 }}>
-        <a href="/" className="back-link">← Back to Work</a>
+        <a href="/" className="back-link"><span>←</span> Back to Work</a>
       </div>
 
     </main>

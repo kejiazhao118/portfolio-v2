@@ -152,7 +152,7 @@ export default function VerticalFarming() {
       </div>
 
       <div style={{ padding: 0 }}>
-        <a href="/" className="back-link">← Back to Work</a>
+        <a href="/" className="back-link"><span>←</span> Back to Work</a>
       </div>
 
     </main>

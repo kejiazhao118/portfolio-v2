@@ -8,7 +8,7 @@ export default function CTAs() {
   return (
     <main className="main-content case-main">
 
-      <a href="/rockwallet" className="back-link">← Back to RockWallet</a>
+      <a href="/rockwallet" className="back-link"><span>←</span> Back to RockWallet</a>
 
       <h1 className="case-title">Homepage CTAs Improvement</h1>
       <p className="case-subtitle">Users weren't noticing the homepage CTAs. A focused, data-informed design iteration to improve visibility and drive engagement.</p>
@@ -141,7 +141,7 @@ export default function CTAs() {
       </div>
 
       <div style={{ padding: 0 }}>
-        <a href="/rockwallet" className="back-link">← Back to RockWallet</a>
+        <a href="/rockwallet" className="back-link"><span>←</span> Back to RockWallet</a>
       </div>
 
     </main>

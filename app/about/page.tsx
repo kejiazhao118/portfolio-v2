@@ -92,10 +92,10 @@ export default function About() {
       <div className="section">
         <p className="section-label section-label-sm">Credentials</p>
         <ul className="credential-list">
-          <li><span>2023 PLAR Award</span><a href="/credentials/PLAR-Award.pdf" target="_blank">View →</a></li>
-          <li><span>Associate RGD Certificate</span><a href="/credentials/Associate-RGD.pdf" target="_blank">View →</a></li>
-          <li><span>Google UX Design Certificate</span><a href="/credentials/Google-UX-Design.pdf" target="_blank">View →</a></li>
-          <li><span>2020 RGD Graduate Award</span><a href="/credentials/RGD-Grad-Award.png" target="_blank">View →</a></li>
+          <li><span>2023 PLAR Award</span><a href="/credentials/PLAR-Award.pdf" target="_blank">View <span>→</span></a></li>
+          <li><span>Associate RGD Certificate</span><a href="/credentials/Associate-RGD.pdf" target="_blank">View <span>→</span></a></li>
+          <li><span>Google UX Design Certificate</span><a href="/credentials/Google-UX-Design.pdf" target="_blank">View <span>→</span></a></li>
+          <li><span>2020 RGD Graduate Award</span><a href="/credentials/RGD-Grad-Award.png" target="_blank">View <span>→</span></a></li>
         </ul>
       </div>
 

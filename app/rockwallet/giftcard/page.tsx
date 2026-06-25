@@ -8,7 +8,7 @@ export default function GiftCard() {
   return (
     <main className="main-content case-main">
 
-      <a href="/rockwallet" className="back-link">← Back to RockWallet</a>
+      <a href="/rockwallet" className="back-link"><span>←</span> Back to RockWallet</a>
 
       <h1 className="case-title">Gift Card Redemption Flow</h1>
       <p className="case-subtitle">Bridging physical retail and digital crypto — a gift card redemption flow designed for both first-time and returning RockWallet users.</p>
@@ -205,7 +205,7 @@ export default function GiftCard() {
       </div>
 
       <div style={{ padding: 0 }}>
-        <a href="/rockwallet" className="back-link">← Back to RockWallet</a>
+        <a href="/rockwallet" className="back-link"><span>←</span> Back to RockWallet</a>
       </div>
 
     </main>

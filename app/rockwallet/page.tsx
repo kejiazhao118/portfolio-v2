@@ -8,7 +8,7 @@ export default function RockWallet() {
   return (
     <main className="main-content case-main">
 
-      <a href="/" className="back-link">← Back to Work</a>
+      <a href="/" className="back-link"><span>←</span> Back to Work</a>
 
       <h1 className="case-title">RockWallet — Product Design</h1>
       <p className="case-subtitle">Designing and shipping end-to-end product flows for a crypto wallet app — from pre-launch feature finalization to post-launch UX iteration driven by real user data.</p>
@@ -38,27 +38,26 @@ export default function RockWallet() {
             <div className="project-card-thumb">
               <img src="/images/rock-wallet/Settings-cover.webp" alt="Settings Flows" />
             </div>
-            <span className="project-card-link">View Project →</span>
+            <span className="project-card-link">View Project <span>→</span></span>
           </a>
 
           <a href="/rockwallet/giftcard" className="project-card">
             <div className="project-card-thumb">
               <img src="/images/rock-wallet/Giftcard-cover.webp" alt="Gift Card Redemption Flow" />
             </div>
-            <span className="project-card-link">View Project →</span>
+            <span className="project-card-link">View Project <span>→</span></span>
           </a>
 
           <a href="/rockwallet/ctas" className="project-card">
             <div className="project-card-thumb">
               <img src="/images/rock-wallet/CTAs-cover.webp" alt="Homepage CTAs Improvement" />
             </div>
-            <span className="project-card-link">View Project →</span>
+            <span className="project-card-link">View Project <span>→</span></span>
           </a>
         </div>
       </div>
 
-      <a href="/" className="back-link">← Back to Work</a>
-
+      <a href="/" className="back-link"><span>←</span> Back to RockWallet</a>
     </main>
   );
 }

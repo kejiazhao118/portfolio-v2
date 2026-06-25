@@ -8,7 +8,7 @@ export default function TRUMoodle() {
   return (
     <main className="main-content case-main">
 
-      <a href="/" className="back-link">← Back to Work</a>
+      <a href="/" className="back-link"><span>←</span> Back to Work</a>
 
       <h1 className="case-title">TRU Moodle Dashboard Redesign</h1>
       <p className="case-subtitle">Redesigning Thompson Rivers University's Moodle learning management system — improving information hierarchy, usability, and visual design.</p>
@@ -108,7 +108,7 @@ export default function TRUMoodle() {
       </div>
 
       <div style={{ padding: 0 }}>
-        <a href="/" className="back-link">← Back to Work</a>
+        <a href="/" className="back-link"><span>←</span> Back to Work</a>
       </div>
 
     </main>

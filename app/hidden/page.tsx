@@ -8,7 +8,7 @@ export default function Hidden() {
   return (
     <main className="main-content case-main">
 
-      <a href="/" className="back-link">← Back to Work</a>
+      <a href="/" className="back-link"><span>←</span> Back to Work</a>
 
       <h1 className="case-title">Hidden — A City Walking Tour App with AR</h1>
       <p className="case-subtitle">A collaborative interactive system project exploring Toronto's hidden subcultures — combining UX research, branding, app prototyping, and Snapchat AR components.</p>
@@ -135,7 +135,7 @@ export default function Hidden() {
       </div>
 
       <div style={{ padding: 0 }}>
-        <a href="/" className="back-link">← Back to Work</a>
+        <a href="/" className="back-link"><span>←</span> Back to Work</a>
       </div>
 
     </main>

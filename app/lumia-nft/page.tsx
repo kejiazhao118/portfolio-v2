@@ -8,7 +8,7 @@ export default function LumiaNFT() {
   return (
     <main className="main-content case-main">
 
-      <a href="/" className="back-link">← Back to Work</a>
+      <a href="/" className="back-link"><span>←</span> Back to Work</a>
 
       <h1 className="case-title">Lumia NFT Marketplace Mobile App</h1>
       <p className="case-subtitle">A passion project designing a dedicated NFT marketplace mobile app — from UX research and branding to high-fidelity UI and prototype.</p>
@@ -160,7 +160,7 @@ export default function LumiaNFT() {
       </div>
 
       <div style={{ padding: 0 }}>
-        <a href="/" className="back-link">← Back to Work</a>
+        <a href="/" className="back-link"><span>←</span> Back to Work</a>
       </div>
 
     </main>

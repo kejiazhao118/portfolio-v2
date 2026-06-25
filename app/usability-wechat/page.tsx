@@ -8,7 +8,7 @@ export default function UsabilityWeChat() {
   return (
     <main className="main-content case-main">
 
-      <a href="/" className="back-link">← Back to Work</a>
+      <a href="/" className="back-link"><span>←</span> Back to Work</a>
 
       <h1 className="case-title">Usability Testing for WeChat</h1>
       <p className="case-subtitle">A full usability study of the WeChat mobile app for Canadian users — from test plan and participant recruitment to task analysis and final reporting.</p>
@@ -155,7 +155,7 @@ export default function UsabilityWeChat() {
       </div>
 
       <div style={{ padding: 0 }}>
-        <a href="/" className="back-link">← Back to Work</a>
+        <a href="/" className="back-link"><span>←</span> Back to Work</a>
       </div>
 
     </main>

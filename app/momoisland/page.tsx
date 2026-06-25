@@ -8,7 +8,7 @@ export default function Momoisland() {
   return (
     <main className="main-content case-main">
 
-      <a href="/" className="back-link">← Back to Work</a>
+      <a href="/" className="back-link"><span>←</span> Back to Work</a>
 
       <h1 className="case-title">Momoisland — E-Commerce Mobile App UI Design</h1>
       <p className="case-subtitle">Designing the first-generation app UI for a Toronto-based e-commerce platform specializing in Asian skincare and beauty products.</p>
@@ -49,7 +49,7 @@ export default function Momoisland() {
       </div>
 
       <div style={{ padding: 0 }}>
-        <a href="/" className="back-link">← Back to Work</a>
+        <a href="/" className="back-link"><span>←</span> Back to Work</a>
       </div>
 
     </main>

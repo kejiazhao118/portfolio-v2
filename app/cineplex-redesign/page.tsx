@@ -8,7 +8,7 @@ export default function CineplexRedesign() {
   return (
     <main className="main-content case-main">
 
-      <a href="/" className="back-link">← Back to Work</a>
+      <a href="/" className="back-link"><span>←</span> Back to Work</a>
 
       <h1 className="case-title">Cineplex Mobile App Redesign</h1>
       <p className="case-subtitle">Redesigning the Cineplex mobile app to improve navigation, user flows, and UI consistency — driven by user research and a passion for better movie-going experiences.</p>
@@ -211,7 +211,7 @@ export default function CineplexRedesign() {
       </div>
 
       <div style={{ padding: 0 }}>
-        <a href="/" className="back-link">← Back to Work</a>
+        <a href="/" className="back-link"><span>←</span> Back to Work</a>
       </div>
 
     </main>

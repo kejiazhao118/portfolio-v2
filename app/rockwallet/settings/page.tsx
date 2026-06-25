@@ -8,7 +8,7 @@ export default function SettingsFlows() {
   return (
     <main className="main-content case-main">
 
-      <a href="/rockwallet" className="back-link">← Back to RockWallet</a>
+      <a href="/rockwallet" className="back-link"><span>←</span> Back to RockWallet</a>
 
       <h1 className="case-title">Settings Flows</h1>
       <p className="case-subtitle">Settings flows for the 2.0 MVP release — update & verify phone, email, and address, designed with user experience at the core.</p>
@@ -261,7 +261,7 @@ export default function SettingsFlows() {
       </div>
 
       <div style={{ padding: 0 }}>
-        <a href="/rockwallet" className="back-link">← Back to RockWallet</a>
+        <a href="/rockwallet" className="back-link"><span>←</span> Back to RockWallet</a>
       </div>
 
     </main>

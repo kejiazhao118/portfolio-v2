@@ -8,7 +8,7 @@ export default function CreativeUI() {
   return (
     <main className="main-content case-main">
 
-      <a href="/" className="back-link">← Back to Work</a>
+      <a href="/" className="back-link"><span>←</span> Back to Work</a>
 
       <h1 className="case-title">Creative UI Design</h1>
       <p className="case-subtitle">A collection of personal UI design explorations — spanning apps and websites — focused on aesthetics, visual composition, and creative expression.</p>
@@ -55,7 +55,7 @@ export default function CreativeUI() {
       </div>
 
       <div style={{ padding: 0 }}>
-        <a href="/" className="back-link">← Back to Work</a>
+        <a href="/" className="back-link"><span>←</span> Back to Work</a>
       </div>
 
     </main>
