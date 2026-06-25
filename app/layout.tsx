@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
 import Sidebar from "./sidebar";
-import PageTransition from "./PageTransition";
 
 const lato = Lato({
   weight: ["400", "700", "900"],
@@ -29,9 +28,7 @@ export default function RootLayout({
       </head>
       <body className={lato.variable}>
         <Sidebar />
-        <PageTransition>
-          {children}
-        </PageTransition>
+        {children}
       </body>
     </html>
   );
