@@ -61,12 +61,13 @@ nav a {
   font-weight: 400;
   color: #111;
   padding: 0.25rem 0;
-  transition: color 0.15s;
+  display: inline-block;
+  transition: color 0.15s, transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 nav a.active { color: hsl(9, 63%, 65%); font-weight: 700; }
 nav a.nav-bold { font-weight: 700; }
-nav a:hover { color: hsl(9, 63%, 65%); }
+nav a:hover { color: hsl(9, 63%, 65%); transform: translateY(-3px) scale(1.05); }
 nav .nav-gap { margin-top: 1.25rem; }
 nav a.nav-small { font-size: 0.95rem; }
 
@@ -85,14 +86,17 @@ nav a.nav-small { font-size: 0.95rem; }
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color 0.15s;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.2s ease;
 }
 
 .sidebar-social a .ti-brand-instagram {
   font-size: 26px;
 }
 
-.sidebar-social a:hover { color: hsl(9, 63%, 65%); }
+.sidebar-social a:hover {
+  color: hsl(9, 63%, 65%);
+  transform: translateY(-5px) scale(1.2);
+}
 
 /* ── MAIN CONTENT ── */
 .main-content {
@@ -123,9 +127,9 @@ nav a.nav-small { font-size: 0.95rem; }
 
 .project-thumb {
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
   margin-bottom: 1rem;
-  background: #f4f4f4;
+  background: transparent;
   border-radius: 24px;
 }
 
@@ -136,11 +140,14 @@ nav a.nav-small { font-size: 0.95rem; }
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.3s ease;
   border-radius: 24px;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
 }
 
-.project:hover .project-thumb img { transform: scale(1.02); }
+.project:hover .project-thumb img {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 24px 48px rgba(0,0,0,0.14), 0 8px 16px rgba(0,0,0,0.06);
+}
 
 .project-title {
   font-size: 0.95rem;
@@ -207,6 +214,16 @@ nav a.nav-small { font-size: 0.95rem; }
 }
 
 .about-bio p strong { color: #111; font-weight: 700; }
+
+/* ── TAGLINE LINES ── */
+.tagline-line {
+  display: inline-block;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.tagline-from-left  { transform: translate(-70px, 10px); }
+.tagline-from-right { transform: translate(70px, 10px); }
 
 .section { margin-bottom: 4rem; }
 

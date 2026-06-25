@@ -22,13 +22,29 @@ export default function About() {
     }
   }, []);
 
+  useEffect(() => {
+    const SPRING = "cubic-bezier(0.34, 1.56, 0.64, 1)";
+    const taglines = document.querySelectorAll<HTMLElement>(".tagline-line");
+    taglines.forEach((el, i) => {
+      setTimeout(() => {
+        el.style.transition = `opacity 0.4s ease, transform 0.55s ${SPRING}`;
+        el.style.opacity = "1";
+        el.style.transform = "translate(0, 0)";
+      }, 200 + i * 160);
+    });
+  }, []);
+
   return (
     <main className="main-content about-main">
 
       <div className="about-header">
         <img src="/images/about/Profile.webp" alt="Aviss Kejia Zhao" className="about-photo" />
         <div className="about-bio">
-          <h1>Curious about people.<br />Passionate about digital craft.<br />Designing the space in between.</h1>
+          <h1>
+            <span className="tagline-line tagline-from-left">Curious about people.</span><br />
+            <span className="tagline-line tagline-from-right">Passionate about digital craft.</span><br />
+            <span className="tagline-line tagline-from-left">Designing the space in between.</span>
+          </h1>
           <p>I'm <strong>Aviss Kejia Zhao</strong>, a <strong>product designer</strong> and <strong>associate registered graphic designer (RGD)</strong> based in Toronto, Canada. I hold a Bachelor of Design from Thompson Rivers University (2023) and an Advanced Diploma in Interaction Design & Development from George Brown Polytechnic (2020).</p>
           <p>I'm a product designer who believes great design lives at the intersection of visual craft and human understanding. I approach every project by grounding decisions in user needs, then pushing the visual and interaction quality until the experience feels both intuitive and considered. With a multidisciplinary education and years of experience across fintech, e-commerce, and digital products, I bring a wide lens to every design challenge — from systems thinking to pixel-level precision.</p>
           <p>My experience spans full-time roles and contract projects across product design, visual design, and design systems. I see design as both a discipline and a joy — something that rewards curiosity, patience, and a genuine care for the people using what you build.</p>
